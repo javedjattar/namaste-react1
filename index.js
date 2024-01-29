@@ -11,8 +11,9 @@ const heading = React.createElement(
 
 console.log(heading)//It return an Object
 
-// Way to Inject Element in Root Div Element
-// We need to create root using React DOM
+const jsxHeading = <h1 id='heading'>Namaste React By JSX</h1>
+// Both heading created using React.createElement()& jsxHeading are same i.e. serve the same purpose 
+
 const root = ReactDOM.createRoot(document.getElementById("root"));
 // Now rendering it using render method
-root.render(heading);
+root.render(jsxHeading);
